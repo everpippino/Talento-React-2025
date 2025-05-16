@@ -11,7 +11,7 @@ function Gallery({ imagenes }) {
             <Card>
               <Card.Img variant="top" src={url} />
               <Card.Body>
-                <Card.Text>Imagenes {idx + 1}</Card.Text>
+                <Card.Text>Imagen {idx + 1}</Card.Text>
               </Card.Body>
             </Card>
           </Col>

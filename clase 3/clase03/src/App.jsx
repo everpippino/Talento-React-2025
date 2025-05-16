@@ -33,13 +33,14 @@ function App() {
   }
 
   return (    
-    <div className="d-flex flex-column min-vh-100">
+    
+    <div className="d-flex flex-column min-vh-100 w-100">
       <Header tipo={tipo} usuario={usuario}/>
       <Nav items={navItems} onSelection={setSection} />
       <main className='flex-grow-1 p-3'>
         {renderContenido()}
       </main>
-
+      
     </div>
   )
 } 
