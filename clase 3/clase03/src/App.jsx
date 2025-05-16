@@ -13,7 +13,7 @@ function App() {
   const tipo="Administrador";
   const navItems=["Inicio","Galeria","Contacto"];
   const imagenes=[
-    "https://picsum.photos/200/300?random=1",
+    "https://i.pravatar.cc/300",
     "https://picsum.photos/200/300?random=2",
     "https://picsum.photos/200/300?random=3"];
   const [section,setSection]=useState("Inicio"); //Hook
@@ -39,7 +39,8 @@ function App() {
       <Nav items={navItems} onSelection={setSection} />
       <main className='flex-grow-1 p-3'>
         {renderContenido()}
-      </main>
+      </main>      
+      <Footer/>
       
     </div>
   )
